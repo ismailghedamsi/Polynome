@@ -10,12 +10,20 @@ package polynome;
  * @author small44
  */
 public class Polynome {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+   double[] coeficient;
+   
+   public Polynome(double[] pCoeficient){
+       coeficient = new double[pCoeficient.length];
+       for(int i=0;i<pCoeficient.length;i++){
+           coeficient[i]=pCoeficient[i];
+       }
+   }
+   
+   public int getDegre(){
+       return coeficient.length-1;
+   }
+   
+ 
+   
+   
 }
